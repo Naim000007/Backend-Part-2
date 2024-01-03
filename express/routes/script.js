@@ -1,5 +1,5 @@
 const express = require('express');
-const { model } = require('mongoose');
+const userModel = require('./users')
 
 const app = express()
 
@@ -7,8 +7,13 @@ app.get("/", (req, res)=>{
     res.render();
 })
 
-app.get("/create", (req, res)=>{
-   
+app.get("/create", async(req, res)=>{
+   const createduser =await userModel.create({
+    username: "Naim Sheikh",
+    name: "Naim",
+    age:25
+   });
+   res.send(createduser)
 })
 
 module.exports = app;
