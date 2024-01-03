@@ -1,6 +1,5 @@
 const express = require('express');
-
-
+const userModel = require('./routes/users')
 const port = 5000;
 
 const app = express();
@@ -13,4 +12,13 @@ app.get('/', (req, res)=>{
 
 app.listen( port , ()=>{
     console.log(`i am running on ${port}`);
+})
+
+app.get("/create", async(req, res)=>{
+   const createduser =await userModel.create({
+    username: "Naim Sheikh",
+    name: "Naim",
+    age:25
+   });
+   res.send(createduser)
 })
