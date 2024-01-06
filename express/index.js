@@ -7,15 +7,21 @@ const port = 5000;
 const app = express();
 app.use(cookieParser())
 app.use(session({
-    resave: false,
+    resave: false, // session value change na hole  pore ar save kore na 
     saveUninitialized: false,
-    secret: "Naim Sheikh make this web site email mdnaim01303202218@gmail.com"
-}))
+    secret: "Naim Sheikh make this web site email mdnaim01303202218@gmail.com"//encrepeted data key 
+})) 
 app.set("view engine", "ejs");
 app.use(express.static('./public'))
 
 app.get('/', (req, res)=>{
+    res.cookie("age", 25)
     res.render('index')
+})
+
+app.get('/read', (req, res)=>{
+    console.log(req.cookies.age);
+    res.send(`Your age is ${req.cookies.age}`)
 })
 
 app.listen( port , ()=>{
