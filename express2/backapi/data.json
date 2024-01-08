@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Alice",
+      "age": 25,
+      "city": "London",
+      "isStudent": true,
+      "grades": [90, 88, 95]
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "age": 30,
+      "city": "New York",
+      "isStudent": false,
+      "grades": [78, 85, 92]
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "age": 22,
+      "city": "Paris",
+      "isStudent": true,
+      "grades": [95, 92, 89]
+    },
+    {
+      "id": 4,
+      "name": "David",
+      "age": 28,
+      "city": "Berlin",
+      "isStudent": false,
+      "grades": [85, 88, 90]
+    },
+    {
+      "id": 5,
+      "name": "Eva",
+      "age": 23,
+      "city": "Tokyo",
+      "isStudent": true,
+      "grades": [92, 94, 87]
+    },
+    {
+      "id": 6,
+      "name": "Frank",
+      "age": 32,
+      "city": "Sydney",
+      "isStudent": false,
+      "grades": [78, 85, 90]
+    },
+    {
+      "id": 7,
+      "name": "Grace",
+      "age": 27,
+      "city": "Toronto",
+      "isStudent": true,
+      "grades": [88, 92, 94]
+    },
+    {
+      "id": 8,
+      "name": "Harry",
+      "age": 29,
+      "city": "Mumbai",
+      "isStudent": false,
+      "grades": [85, 90, 78]
+    },
+    {
+      "id": 9,
+      "name": "Ivy",
+      "age": 26,
+      "city": "Cape Town",
+      "isStudent": true,
+      "grades": [94, 87, 92]
+    },
+    {
+      "id": 10,
+      "name": "Jack",
+      "age": 31,
+      "city": "Rio de Janeiro",
+      "isStudent": false,
+      "grades": [90, 92, 85]
+    }
+  ]
+  
